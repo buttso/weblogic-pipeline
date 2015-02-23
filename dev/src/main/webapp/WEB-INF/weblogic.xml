@@ -1,0 +1,4 @@
+<weblogic-web-app>
+  <context-root>basicwebapp</context-root>
+</weblogic-web-app>
+
