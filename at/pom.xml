@@ -6,6 +6,7 @@
     <version>1.0.AT</version>
     <packaging>pom</packaging>
     <name>basicwebapp</name>
+    <description>Acceptance Test</description>
 
     <properties>
         <oracleHome>/tmp/wls12130_latest</oracleHome>

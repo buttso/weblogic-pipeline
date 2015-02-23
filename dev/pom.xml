@@ -6,6 +6,7 @@
     <version>1.0</version>
     <packaging>war</packaging>
     <name>basicwebapp</name>
+    <description>Development of basicwebapp</description>
 
     <properties>
         <oracleHome>/tmp/wls12130_latest</oracleHome>

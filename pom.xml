@@ -6,7 +6,7 @@
     <artifactId>pipeline</artifactId>
     <version>1.0</version>
     <packaging>pom</packaging>
-    <name>pipeline</name>
+    <name>dev at pipeline</name>
 
     <properties>
         <java.min.version>1.7</java.min.version>
@@ -27,36 +27,37 @@
       <module>at</module>
     </modules>
 
-    <pluginRepositories>
-        <pluginRepository>
-            <id>codehaus-snapshots</id>
-            <name>Codehaus Snapshots</name>
-            <url>http://nexus.codehaus.org/snapshots/</url>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </pluginRepository>
-    </pluginRepositories>
-
     <repositories>
         <repository>
-            <id>codehaus-snapshots</id>
-            <name>Codehaus Snapshots</name>
-            <url>http://nexus.codehaus.org/snapshots/</url>
+            <id>maven.oracle.com</id>
+            <name>Oracle Maven Repository</name>
+            <url>https://maven.oracle.com/</url>
             <releases>
-                <enabled>false</enabled>
+                <enabled>true</enabled>
             </releases>
             <snapshots>
-                <enabled>true</enabled>
+                <enabled>false</enabled>
             </snapshots>
         </repository>
     </repositories>
 
+    <pluginRepositories>
+        <pluginRepository>
+            <id>maven.oracle.com</id>
+            <name>Oracle Maven Repository</name>
+            <url>https://maven.oracle.com/</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+
     <build>
         <finalName>${project.artifactId}</finalName>
+        <defaultGoal>verify</defaultGoal>
     </build>
 
     <reporting>
